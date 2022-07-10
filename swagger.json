@@ -16,6 +16,14 @@
             "description": "A single quote",
             "examples": {
               "application/json": "{\n                  \"quote\": \"The supreme art of war is to subdue the enemy without losing sight of the battle.\"\n              }"
+            },
+            "schema": {
+              "type": "object",
+              "properties": {
+                "quote": {
+                  "type": "string"
+                }
+              }
             }
           }
         }
@@ -41,6 +49,14 @@
             "description": "A single quote",
             "examples": {
               "application/json": "{\n                  \"quote\": \"The supreme art of war is to subdue the enemy without losing sight of the battle.\"\n              }"
+            },
+            "schema": {
+              "type": "object",
+              "properties": {
+                "quote": {
+                  "type": "string"
+                }
+              }
             }
           },
           "404": {
@@ -58,11 +74,26 @@
         "produces": [
           "application/json"
         ],
+        "parameters": [
+          {
+            "name": "withIds",
+            "in": "query",
+            "description": "Whether to include the quote id in the response",
+            "required": false,
+            "type": "boolean"
+          }
+        ],
         "responses": {
           "200": {
             "description": "A list of quotes",
             "examples": {
-              "application/json": "[\n  \"The general who wins the battle makes many calculations in his temple before the battle is fought. The general who loses makes but few calculations beforehand.\",\n \"The control of a large force is the same principle as the control of a few men: it is merely a question of dividing up their numbers.\",\n  \"The ultimate in disposing one's troops is to be without ascertainable shape. Then the most penetrating spies cannot pry in nor can the wise lay plans against you.\",.......]"
+              "application/json": "[\n  \"QUOTE\",\n \"QUOTE\",\n  \"QUOTE\",.......]"
+            },
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
             }
           }
         }
