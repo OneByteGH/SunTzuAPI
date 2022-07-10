@@ -1,3 +1,72 @@
 {
-
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Sun Tzu Quotes API"
+  },
+  "paths": {
+    "/quote": {
+      "get": {
+        "description": "Get a random quote",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "A single quote",
+            "examples": {
+              "application/json": "{\n                  \"quote\": \"The supreme art of war is to subdue the enemy without losing sight of the battle.\"\n              }"
+            }
+          }
+        }
+      }
+    },
+    "/quote/{id}": {
+      "get": {
+        "description": "Get a quote by id",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The quote id",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A single quote",
+            "examples": {
+              "application/json": "{\n                  \"quote\": \"The supreme art of war is to subdue the enemy without losing sight of the battle.\"\n              }"
+            }
+          },
+          "404": {
+            "description": "Quote not found",
+            "examples": {
+              "application/json": "{\n                \"error\": \"Quote not found\"\n              }"
+            }
+          }
+        }
+      }
+    },
+    "/quotes": {
+      "get": {
+        "description": "Get all quotes",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of quotes",
+            "examples": {
+              "application/json": "[\n  \"The general who wins the battle makes many calculations in his temple before the battle is fought. The general who loses makes but few calculations beforehand.\",\n \"The control of a large force is the same principle as the control of a few men: it is merely a question of dividing up their numbers.\",\n  \"The ultimate in disposing one's troops is to be without ascertainable shape. Then the most penetrating spies cannot pry in nor can the wise lay plans against you.\",.......]"
+            }
+          }
+        }
+      }
+    }
+  }
 }
