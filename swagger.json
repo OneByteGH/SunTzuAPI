@@ -74,15 +74,6 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "withIds",
-            "in": "query",
-            "description": "Whether to include the quote id in the response",
-            "required": false,
-            "type": "boolean"
-          }
-        ],
         "responses": {
           "200": {
             "description": "A list of quotes",

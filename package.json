@@ -1,7 +1,7 @@
 {
   "name": "suntzuapi",
   "version": "1.0.0",
-  "description": "",
+  "description": "An API that provides you with Sun Tzu quotes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
