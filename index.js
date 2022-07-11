@@ -36,4 +36,4 @@ app.get("/quotes", (req, res) => {
 });
 
 
-app.listen(80, () => console.log(`Sun Tzu Quotes API listening on port 80`));
+app.listen(process.env.PORT, () => console.log(`Sun Tzu Quotes API listening on port ${process.env.PORT}`));
