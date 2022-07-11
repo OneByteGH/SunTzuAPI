@@ -5,6 +5,11 @@ An API that provides you with Sun Tzu quotes
 ## Acknowledgements
   
   - [sun-tzu-quotes](https://www.npmjs.com/package/sun-tzu-quotes) - The main library used in making of this API
+
+## Authors
+
+- [@OneByteGH](https://www.github.com/OneByteGH)
+
 ## API Reference
 
 #### Get All Quotes
@@ -36,9 +41,6 @@ Returns a random quote
 
 
 Also, dont forget to checkout the [Swagger Documentation](https://suntzuapi.herokuapp.com/api-docs/)
-## Authors
-
-- [@OneByte](https://www.github.com/OneByteGH)
 
 
 ## Run Locally
