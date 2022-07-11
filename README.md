@@ -35,7 +35,7 @@ Returns 404 if the ID is invalid
 Returns a random quote
 
 
-Also, dont forget to checkout the [Swagger Documentations](https://asd/api-docs)
+Also, dont forget to checkout the [Swagger Documentation](https://suntzuapi.herokuapp.com/api-docs/)
 ## Authors
 
 - [@OneByte](https://www.github.com/OneByteGH)
